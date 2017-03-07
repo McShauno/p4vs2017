@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="P4VsProvider.Perforce.8D316614-311A-48F4-85F7-DF7020F62357">
+    <Name>P4VS - Perforce Plugin for Visual Studio</Name>
+    <Author>Perforce Software, Inc.</Author>
+    <Version>2016.2.147.9832</Version>
+    <Description xml:space="preserve">P4VS is the Perforce Helix integration for Microsoft Visual Studio. P4VS provides developers working within Visual Studio access to Helix version control features, including check in/check out, view file history, and more.
+</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://www.perforce.com/product/components/visual-studio-plug-in</MoreInfoUrl>
+    <License>LICENSE.txt</License>
+    <GettingStartedGuide>http://www.perforce.com/perforce/doc.current/user/p4vsnotes.txt</GettingStartedGuide>
+    <Icon>p4vs11-32px.png</Icon>
+    <PreviewImage>icon-p4vs11-250px.png</PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="11.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+    <VisualStudio Version="12.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+    <VisualStudio Version="14.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+      <VisualStudio Version="15.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5" />
+  </Identifier>
+  <References />
+  <Content>
+    <CustomExtension Type="dll">p4bridge.dll</CustomExtension>
+    <CustomExtension Type=".config">nlog.config</CustomExtension>
+    <CustomExtension Type=".chm">p4vs.chm</CustomExtension>
+    <VsPackage>P4VS11.pkgdef</VsPackage>
+  </Content>
+</Vsix>
